@@ -1,18 +1,8 @@
 var $carousel = $('#carousel');
-var dataIndex = 0;
 
-//  populate starting items
-// for(var i = 0; i < 5; i++) {
-//   addItem();
-// }
-
-function addItem(){
-  // loop items when reaching end
-  if(dataIndex >= carouselData.length) {
-    dataIndex = 0;
-  }
-  $carousel.append('<span class="carousel-item">'+carouselData[dataIndex++]+'</span>');
+var html = "<div>";
+for(var i = 0; i < carouselData.length; i++) {
+  html += '<span class="carousel-item">'+carouselData[i]+'</span>';
 }
-
-// add item to the end every two seconds
-setInterval(addItem, 2000);
+html += "</div>";
+$carousel.append(html);

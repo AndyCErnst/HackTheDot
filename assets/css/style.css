@@ -8,28 +8,32 @@
   height: 40px;
   background-color: rgba(150,150,150,.5);
   position: relative;
+  overflow: hidden;
 }
 
 
 .carousel-item {
-  padding: 5px 30px;
+  padding: 9px 30px;
+  display: inline-block;
 }
 
 #carousel {
     position: absolute;
     height: 40px;
+    width: 5000%;
+    font-size: 18px;
     text-align: left;
     animation-name: carousel;
-    animation-duration: 20s;
+    animation-duration: 200s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes carousel {
     0% {
-        right: 0;
+        left: 500px;
     }
     100% {
-        right: 2000px;
+        left: -5000px;
     }
 }​
