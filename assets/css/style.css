@@ -1,3 +1,11 @@
+#weather-bug {
+    top: 80px;
+    right: 20px;
+    width: 150px;
+    align: right;
+    position: absolute;
+}
+
 #stream-container {
   height: 500px;
   border: 2px solid black;
