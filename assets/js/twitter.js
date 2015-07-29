@@ -8,7 +8,9 @@ function addTweet() {
   if(i>=tweets.length){
     i = 0;
   }
-  $('.tweet'+i).remove();
+  $('.tweet'+i).hide(slow, function(e) {
+    $(e).remove();
+  });
   twit.append('<div class="tweet tweet'+i+'">'+tweets[++i]+'</div>');
 }
 
