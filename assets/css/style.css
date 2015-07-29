@@ -7,4 +7,29 @@
 #carousel-container {
   height: 40px;
   background-color: rgba(150,150,150,.5);
+  position: relative;
 }
+
+
+.carousel-item {
+  padding: 5px 30px;
+}
+
+#carousel {
+    position: absolute;
+    height: 40px;
+    text-align: left;
+    animation-name: carousel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes carousel {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 2000px;
+    }
+}​
