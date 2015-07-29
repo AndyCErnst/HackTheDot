@@ -1,0 +1,10 @@
+#stream-container {
+  height: 640px;
+  border: 2px solid black;
+}
+
+
+#carousel-container {
+  height: 40px;
+  background-color: rgba(150,150,150,.5);
+}
