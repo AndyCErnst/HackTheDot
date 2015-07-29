@@ -5,10 +5,10 @@ for(var j = 0; j < 10; j++) {
   addTweet();
 }
 function addTweet() {
-  if(i>=tweets.length){
+  if(i>=tweets.length -1){
     i = 0;
   }
-  $('.tweet'+i).hide(slow, function(e) {
+  $('.tweet'+i).hide('slow', function(e) {
     $(e).remove();
   });
   twit.append('<div class="tweet tweet'+i+'">'+tweets[++i]+'</div>');

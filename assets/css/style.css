@@ -7,11 +7,11 @@
   height: 100%;
 }
 #weather-bug {
-    top: 80px;
-    right: 20px;
-    width: 150px;
-    align: right;
-    position: absolute;
+  top: 80px;
+  right: 216px;
+  width: 150px;
+  position: absolute;
+  z-index: 500;
 }
 
 #stream-container {
@@ -38,10 +38,15 @@
 }
 
 #carousel-container {
-  height: 40px;
-  background-color: rgba(150,150,150,.5);
+height: 70px;
+  background-color: rgb(150,150,150);
   position: relative;
   overflow: hidden;
+  margin-top: -35px;
+  text-transform: uppercase;
+  line-height: 52px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 
@@ -51,22 +56,21 @@
 }
 
 #carousel {
-    position: absolute;
-    height: 40px;
-    width: 5000%;
-    font-size: 18px;
-    text-align: left;
-    animation-name: carousel;
-    animation-duration: 200s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  position: absolute;
+  height: 40px;
+  width: 5000%;
+  text-align: left;
+  animation-name: carousel;
+  animation-duration: 200s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes carousel {
-    0% {
-        left: 500px;
-    }
-    100% {
-        left: -5000px;
-    }
+  0% {
+      left: 500px;
+  }
+  100% {
+      left: -25000px;
+  }
 }​
